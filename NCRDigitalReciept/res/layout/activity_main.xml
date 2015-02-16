@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ncr_green_color"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/main_view_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/custom_title_bar_color"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ncr_header"
+            android:visibility="gone" />
+         <TextView
+             android:id="@+id/headerLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:textSize="@dimen/text_size_header"
+            android:textColor="@color/text_color_black"
+             />
+
+        <Button
+            android:id="@+id/header_right"
+            android:layout_width="@dimen/header_controls_size"
+            android:layout_height="@dimen/header_controls_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/update"
+            android:onClick="onRefresh" />
+
+        <Button
+            android:id="@+id/header_left"
+            android:layout_width="@dimen/header_controls_size"
+            android:layout_height="@dimen/header_controls_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/ic_menu_set_as"
+            android:onClick="onLogin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_view_qr_code"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_view_header" >
+
+        <ImageView
+            android:id="@+id/main_view_qr_code_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/image"
+            android:src="@android:drawable/alert_light_frame" />
+
+        <RelativeLayout
+            android:id="@+id/main_view_qr_code_managment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_view_qr_code_image"
+            android:layout_margin="20dp" >
+
+            <TextView
+                android:id="@+id/main_view_qr_code_managment_code_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+               android:layout_marginTop="23dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_big"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_view_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

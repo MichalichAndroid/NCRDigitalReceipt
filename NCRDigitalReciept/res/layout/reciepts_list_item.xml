@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/reciept_list_item_retailer_logo"
+        android:layout_width="@dimen/retailer_logo_size"
+        android:layout_height="@dimen/retailer_logo_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/retailer_logo" />
+
+    <ImageView
+        android:id="@+id/reciept_list_item_to_details_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/to_details"
+        android:src="@drawable/navigate_right" />
+
+    <RelativeLayout
+        android:id="@+id/reciept_list_item_text_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/reciept_list_item_to_details_image"
+        android:layout_toRightOf="@id/reciept_list_item_retailer_logo"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/reciept_list_item_text_container_line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/reciept_list_item_text_container_right_text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/date_text_blue" />
+
+            <TextView
+                android:id="@+id/reciept_list_item_text_container_left_text_retailer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@id/reciept_list_item_text_container_right_text_date"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_header"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reciept_list_item_text_container_line_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/reciept_list_item_text_container_line_1"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/reciept_list_item_text_container_left_text_retailer_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reciept_list_item_text_container_line_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/reciept_list_item_text_container_line_2"
+            android:paddingTop="3dp" >
+
+            <TextView
+                android:id="@+id/reciept_list_item_text_container_left_text_retailer_purchase_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/total_dots"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_header"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reciept_list_item_text_container_left_text_retailer_purchase_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_header"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

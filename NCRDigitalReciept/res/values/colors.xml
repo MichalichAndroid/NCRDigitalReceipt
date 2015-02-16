@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ncr_green_color">#4E971F</color>
+    <color name="custom_theme_color">#00ff00</color>
+    <color name="custom_title_bar_color">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="text_color_black">#000000</color>
+    <color name="date_text_blue">#0950d0</color>
+
+</resources>

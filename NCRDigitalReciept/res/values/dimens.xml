@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_big">80sp</dimen>
+    <dimen name="header_controls_size">32dp</dimen>
+    <dimen name="retailer_logo_size">80dp</dimen>
+    <dimen name="reciept_list_item_text_size">18sp</dimen>
+
+</resources>

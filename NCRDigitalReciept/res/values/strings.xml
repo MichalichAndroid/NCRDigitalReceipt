@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="application_id">GI0onNPgipudQrPflEVJJBQz83Ms9GuuaUXzIawS</string>
+    <string name="client_id">r1ch0MW8clfboCMxFSIkZqsxv8wPTXiU8f1LWAVd</string>
+    <string name="app_name">NCR Digital Receipt</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="generate_barcode">Generate Barcode</string>
+    <string name="image">Image</string>
+    <string name="generate">Generate</string>
+    <string name="title_activity_reciepts">RecieptsActivity</string>
+    <string name="title_activity_reciept_view">RecieptViewActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_name">user name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign up</string>
+    <string name="or">or</string>
+    <string name="anonymus">anonymus</string>
+    <string name="retailer_logo">retailer logo</string>
+    <string name="to_details">details=></string>
+    <string name="total_dots">Total:</string>
+    <string name="default_facebook_name">facebook user</string>
+    <string name="Error">Error</string>
+    <string name="No_internet">Something Wrong With Communication</string>
+    <string name="Retry">Retry</string>
+    <string name="title_activity_main_drawer">MainDrawerActivity</string>
+
+</resources>

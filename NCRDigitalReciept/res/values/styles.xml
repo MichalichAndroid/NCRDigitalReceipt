@@ -1,0 +1,39 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+
+    <!-- Application theme. -->
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="CustomTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:colorBackground">@color/custom_theme_color</item>
+       
+      
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+        <item name="android:windowTitleSize">45dp</item>
+      
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item>
+    </style>
+     <style name="myButton" parent="@android:style/Widget.Button"></style>
+     <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+    </style>
+    
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/custom_title_bar_color</item>
+    </style>
+     <style name="CustomTabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+     
+   
+
+</resources>
